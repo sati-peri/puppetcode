@@ -1,0 +1,3 @@
+Puppet installation
+install wget
+install -y wget >/dev/null
