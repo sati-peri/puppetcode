@@ -1,3 +1,18 @@
-Puppet installation
-install wget
-install -y wget >/dev/null
+1 Puppet installation
+2 install wget
+3 install -y wget >/dev/null
+  4  which wget
+    5  wget "https://pm.puppet.com/cgi-bin/download.cgi?dist=redhatfips&rel=7&arch=x86_64&ver=latest" -O puppet.tar.gz
+    6  ls -lh
+    7  tar zxf puppet.tar.gz
+    8  ls -l
+    9  cd puppet-enterprise-2019.8.4-redhatfips-7-x86_64
+   10  ls
+   11  hostname
+   12  hostnamectl set-hostname ec2-user@ec2-13-232-249-105.ap-south-1.compute.amazonaws.com
+   13  hostname
+   14  ./puppet-enterprise-installer
+   15  cd ..
+   16  ls
+17 puppet infrastructure console_password
+   18  puppet agent -t
